@@ -8,7 +8,7 @@ import todoStore, { todoKey } from "./store/todo/index";
 
 export default defineComponent({
   setup() {
-    provide(todoKey, todoStore.getTodos());
+    provide(todoKey, todoStore);
   },
 });
 </script>

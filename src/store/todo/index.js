@@ -50,7 +50,7 @@ const updateTodo = (todo) => {
 };
 
 const deleteTodo = (id) => {
-  todoState.todos = todoState.todos.filter((t) => t.id === id);
+  todoState.todos = todoState.todos.filter((t) => t.id !== id);
 };
 
 export default {
